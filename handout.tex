@@ -1,0 +1,120 @@
+\documentclass[landscape]{article}
+\usepackage{amsmath,amsfonts,amsthm,amssymb,graphicx,multicol,multirow}
+\usepackage[margin=0.5in]{geometry}
+
+\pagestyle{empty}
+
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+    \begin{center}
+        \includegraphics[width=0.95\linewidth]{figures/flowchart.png}
+    \end{center}
+    
+    \pagebreak
+
+    \begin{center}
+        \begin{tabular}{c p{0.1cm} c p{0.1cm} c p{0.1cm} c}
+            \begin{tabular}{c|cccc}
+                $C_{2v}$ & $E$ & $C_2$ & $\sigma_{v1}$ & $\sigma_{v2}$\\
+                \hline
+                $A_1$ & $1$ & $1$ & $1$ & $1$\\
+                $A_2$ & $1$ & $1$ & $-1$ & $-1$\\
+                $B_1$ & $1$ & $-1$ & $1$ & $-1$\\
+                $B_2$ & $1$ & $-1$ & $-1$ & $1$\\
+            \end{tabular}
+            & &
+            \begin{tabular}{c|ccc}
+                $C_{3v}$ & $E$ & $2C_3$ & $3\sigma_{v}$\\
+                \hline
+                $A_1$ & $1$ & $1$ & $1$\\
+                $A_2$ & $1$ & $1$ & $-1$\\
+                $E$ & $2$ & $-1$ & $0$\\
+            \end{tabular}
+            & &
+            \begin{tabular}{c|cccc}
+                $C_{5v}$ & $E$ & $2C_5$ & $2C_5^2$ & $5\sigma_v$\\
+                \hline
+                $A_1$ & $1$ & $1$ & $1$ & $1$\\
+                $A_2$ & $1$ & $1$ & $1$ & $-1$\\
+                $E_1$ & $2$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $0$\\
+                $E_2$ & $2$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $0$\\
+            \end{tabular}
+            & &
+            \begin{tabular}{c|cccc}
+                $D_{5}$ & $E$ & $2C_5$ & $2C_5^2$ & $5C_2$\\
+                \hline
+                $A_1$ & $1$ & $1$ & $1$ & $1$\\
+                $A_2$ & $1$ & $1$ & $1$ & $-1$\\
+                $E_1$ & $2$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $0$\\
+                $E_2$ & $2$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $0$\\
+            \end{tabular}
+        \end{tabular}
+        \vspace{1cm}
+
+        \begin{tabular}{lcr}
+            \begin{minipage}[c]{0.4\linewidth}
+                \begin{center}
+                    \begin{tabular}{c|cccccccc}
+                        $D_{5d}$ & $E$ & $2C_5$ & $2C_5^2$ & $5C_2$ & $i$ & $2S_{10}^3$ & $2S_{10}$ & $5\sigma_d$\\
+                        \hline
+                        $A_{1g}$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\
+                        $A_{2g}$ & $1$ & $1$ & $1$ & $-1$ & $1$ & $1$ & $1$ & $-1$\\
+                        $E_{1g}$ & $2$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $0$ & $2$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $0$\\
+                        $E_{2g}$ & $2$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $0$ & $2$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $0$\\
+                        $A_{1u}$ & $1$ & $1$ & $1$ & $1$ & $-1$ & $-1$ & $-1$ & $-1$\\
+                        $A_{2u}$ & $1$ & $1$ & $1$ & $-1$ & $-1$ & $-1$ & $-1$ & $1$\\
+                        $E_{1u}$ & $2$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $0$ & $-2$ & $\frac12-\frac{\sqrt{5}}{2}$ & $\frac12+\frac{\sqrt{5}}{2}$ & $0$\\
+                        $E_{2u}$ & $2$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $0$ & $-2$ & $\frac12+\frac{\sqrt{5}}{2}$ & $\frac12-\frac{\sqrt{5}}{2}$ & $0$\\
+                    \end{tabular}
+                \end{center}
+                \vspace{1cm}
+                
+                \begin{tabular}{c|cccccccc}
+                    $D_{5h}$ & $E$ & $2C_5$ & $2C_5^2$ & $5C_2$ & $\sigma_h$ & $2S_5$ & $2S_5^3$ & $5\sigma_v$\\
+                    \hline
+                    $A_1'$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$\\
+                    $A_2'$ & $1$ & $1$ & $1$ & $-1$ & $1$ & $1$ & $1$ & $-1$\\
+                    $E_1'$ & $2$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $0$ & $2$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $0$\\
+                    $E_2'$ & $2$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $0$ & $2$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $0$\\
+                    $A_1''$ & $1$ & $1$ & $1$ & $1$ & $-1$ & $-1$ & $-1$ & $-1$\\
+                    $A_2''$ & $1$ & $1$ & $1$ & $-1$ & $-1$ & $-1$ & $-1$ & $1$\\
+                    $E_1''$ & $2$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $0$ & $-2$ & $\frac12-\frac{\sqrt{5}}{2}$ & $\frac12+\frac{\sqrt{5}}{2}$ & $0$\\
+                    $E_2''$ & $2$ & $-\frac12-\frac{\sqrt{5}}{2}$ & $-\frac12+\frac{\sqrt{5}}{2}$ & $0$ & $-2$ & $\frac12+\frac{\sqrt{5}}{2}$ & $\frac12-\frac{\sqrt{5}}{2}$ & $0$\\
+                \end{tabular}
+            \end{minipage}
+            & \hspace{3cm} &
+            \begin{minipage}[c]{0.3\linewidth}
+                \begin{center}
+                    \begin{tabular}{c|cc}
+                        $C_{s}$ & $E$ & $\sigma_h$\\
+                        \hline
+                        $A'$ & $1$ & $1$\\
+                        $A''$ & $1$ & $-1$
+                    \end{tabular}
+                    \vspace{1cm}
+                    
+                    \begin{tabular}{c|ccccc}
+                        $C_{5}$ & $E$ & $C_5$ & $C_5^2$ & $C_5^3$ & $C_5^4$\\
+                        \hline
+                        $A$~~~~ & $1$ & $1$ & $1$ & $1$ & $1$\\
+                        \multirow{2}{*}{$E_1$~\Bigg\{} & $1$ & $\varepsilon$ & $\varepsilon^2$ & $\overline{\varepsilon^2}$ & $\overline{\varepsilon}$\\
+                        & $1$ & $\overline{\varepsilon}$ & $\overline{\varepsilon^2}$ & $\varepsilon^2$ & $\varepsilon$\\
+                        \multirow{2}{*}{$E_2$~\Bigg\{} & $1$ & $\varepsilon^2$ & $\overline{\varepsilon}$ & $\varepsilon$ & $\overline{\varepsilon^2}$\\
+                        & $1$ & $\overline{\varepsilon^2}$ & $\varepsilon$ & $\overline{\varepsilon}$ & $\varepsilon^2$
+                    \end{tabular}
+                    \vspace{1cm}
+                    
+                    \begin{tabular}{c|ccc}
+                        $C_{3}$ & $E$ & $C_3$ & $C_3^2$\\
+                        \hline
+                        $A$~~~~ & $1$ & $1$ & $1$\\
+                        \multirow{2}{*}{$E_1$~\Bigg\{} & $1$ & $\varepsilon$ & $\overline{\varepsilon}$\\
+                        & $1$ & $\overline{\varepsilon}$ & $\varepsilon$
+                    \end{tabular}
+                \end{center}
+            \end{minipage}
+        \end{tabular}
+    \end{center}
+\end{document}
