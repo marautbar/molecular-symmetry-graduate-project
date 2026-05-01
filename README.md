@@ -13,4 +13,10 @@ Building on this representation-theoretic framework, we analyze the eigenvalues 
 
 Finally, we extend this analysis to point groups exhibiting fivefold symmetry, where non-integer character values arise. In these cases, we demonstrate that for certain point groups, Galois symmetry shows that relevant character values lie in the real subfield $\mathbb{Q}(\sqrt5)\subset\mathbb{Q}(\zeta_5)$, revealing a deeper connection between molecular symmetry and algebraic number theory. Our central result is that the structure of character tables for molecular point groups is governed by cyclotomic fields and their associated Galois groups.
 
-[Open PDF](paper.pdf)
+[Open Paper PDF](paper.pdf)
+
+[Open Presentation PDF](presentation.pdf)
+
+[Open Handout PDF](handout.pdf)
+
+![Poster](poster.png)
